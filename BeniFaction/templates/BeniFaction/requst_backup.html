@@ -1,0 +1,69 @@
+{% extends "BeniFaction/layou-indext.html" %} {% load static %} {% block title %} Request Donation Drive {% endblock %} {% block body %}
+<link rel="stylesheet" href="{% static 'donate_stylr.css' %}">
+<div id="blur-back"></div>
+<div id="popup-form">
+    <div class="img-big" style="background-image: url('{% static 'undraw_agreement_aajr 1.svg' %}');"></div>
+    <span class="agreement">
+        By clicking “I Agree”, you understand and agree to DonaTayo’s <a href="#">Terms of Service</a>  and <a href="">Privacy Policy</a>.
+    </span>
+    <button id="button_agree" onclick="i_agree()">I AGREE</button>
+</div>
+
+<div class="main-container">
+    <div id="image-side st">
+
+    </div>
+    <div id="image-side mnd">
+
+    </div>
+    <form id="form-s" action="{% url 'discover' %}" method="post">
+        {% csrf_token %}
+        <div id="first_page">
+            <label class="label-d" for="name">Name (Optional)</label><br>
+            <input name="name" type="email" id="name-input"><br>
+            <br>
+            <label class="label-d" for="email">Email</label><br>
+            <input type="text" name="email" id="email-input"><br>
+            <br>
+            <label class="label-d" for="aff">Affiliation/s</label><br>
+            <input type="text" name="aff" id="aff-input"><br>
+            <br>
+            <label class="label-d" for="validid">Valid ID</label><br>
+            <input type="file" name="validid" id="up-button" value="UPLOAD"><br>
+            <br>
+            <span onclick="next_form()">PROCEED</span>
+        </div>
+        <div id="second_page">
+            <label class="label-d" for="don_drive_title">Donation Drive Title</label><br>
+            <input type="text" name="don_drive_title" id="don_title_input"><br>
+            <br>
+            <label class="label-d" for="don_drive_desc">Donation Drive Description</label><br>
+            <input type="text" name="don_drive_desc" id="don_desc_input"><br>
+            <br>
+            <label class="label-d" for="amount">Amount goal of the Drive</label><br>
+            <input type="number" name="amount" id="amount_input"><br>
+            <br>
+            <label class="label-d" for="doc_in">Document of Company Contact Information</label><br>
+            <input type="file" name="doc_in" id="up-button"><br>
+            <br>
+            <button>PROCEED</button>
+        </div>
+
+
+    </form>
+</div>
+<script>
+    function i_agree() {
+        document.getElementById('popup-form').style.display = 'none'
+    }
+
+    function next_form() {
+        document.getElementById('first_page').style.display = 'none'
+        document.getElementById('second_page').style.display = 'block'
+        document.getElementById('st').style.display = 'none'
+        document.getElementById('mnd').style.display = 'block'
+
+
+    }
+</script>
+{% endblock %}

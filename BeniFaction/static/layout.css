@@ -1,0 +1,133 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Karla', 'Open Sans';
+}
+
+body {
+  background-color: #F5F5F5;
+  margin: 0;
+}
+
+.nav-name {
+  position: relative;
+  width: 100vw;
+  height: 9vh;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.nav-name .logo-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 7rem;
+  height: 3rem;
+  margin-left: 4rem;
+  margin-top: .6rem;
+  float: left;
+  position: absolute;
+}
+
+.nav-name ul {
+  width: 80%;
+  -ms-flex-negative: 2rem;
+      flex-shrink: 2rem;
+  list-style: none;
+  margin: 0;
+  float: right;
+  padding: 0;
+  margin-right: 3rem;
+}
+
+.nav-name ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #6d6d6d;
+  float: right;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 810px) {
+  .nav-icon {
+    display: none;
+  }
+  .nav-item {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-name {
+    bottom: .5rem;
+    position: fixed;
+    overflow: visible;
+  }
+  .nav-name .mob {
+    display: none;
+  }
+  .nav-name ul {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    -webkit-box-shadow: 1px -7px 20px 3px rgba(0, 0, 0, 0.05);
+            box-shadow: 1px -7px 20px 3px rgba(0, 0, 0, 0.05);
+  }
+  .nav-name .mobile {
+    margin: .5rem;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    float: none;
+  }
+  .nav-name .icon-mobile {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    float: none;
+    width: 2rem;
+    border-radius: 2rem;
+    background-image: linear-gradient(45deg, #39CCE5, #304ABF);
+    -webkit-transition: background-color 1s ease-in-out;
+    transition: background-color 1s ease-in-out;
+  }
+  .nav-name .icon-mobile:hover,
+  .nav-name .icon-mobile:focus {
+    background-color: #304ABF;
+  }
+  .nav-name .one {
+    left: 35%;
+  }
+  .nav-name .two {
+    left: 65%;
+  }
+  .nav-name .mobileicon {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 2;
+    top: -85vh;
+    left: 10%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    float: none;
+  }
+  .nav-name .nav-item {
+    display: none;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

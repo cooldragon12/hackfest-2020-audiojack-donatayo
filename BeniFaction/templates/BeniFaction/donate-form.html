@@ -1,0 +1,21 @@
+{% extends "BeniFaction/layou-indext.html" %}
+{% load static %}
+{% block title %}
+    Donate | {{ nameProject }}
+{% endblock %}
+{% block body %}
+    <div class="container-form">
+        <!-- Grid layer -->
+        <div class="info-container">
+
+        </div>
+        <div class="pay-bio-container">
+            <!-- Scrollable -->
+            <form action="{% urls 'finishedForm' %}" method="post">
+
+            </form>
+        </div>
+
+    </div>
+{% endblock %}
+

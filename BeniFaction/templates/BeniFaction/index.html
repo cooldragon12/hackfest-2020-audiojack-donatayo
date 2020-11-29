@@ -1,0 +1,66 @@
+{% extends "BeniFaction/layou-indext.html" %} {% load static %} {% block title %} Home | News {% endblock %} {% block body %}
+<div class="container-upper">
+    <div id="floating-box">
+        <h1 id="introd">ACKNOWLEDGE. SAFETY. INFORM. CYBERSPACE. SECURITY</h1>
+    </div>
+    <div class="backcloud-image">
+    </div>
+</div>
+<div id="container-xecond">
+    <div class="gridguide">
+        <div class="content-left">
+            <span class="n91">HOW TO DONATE WITH <h3>DONATAYO</h3></span>
+            <span class="n94">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis facilisi nunc
+                porta arcu nibh placerat. </span>
+        </div>
+        <div id="pic-right">
+            <img src="{% static 'illust1.svg' %}" alt="pic2" width="500" height="500">
+        </div>
+        <div class="steps-long">
+            <div class="steps">
+                <h1>1</h1>
+                <p>Go to Discover and look for the donation drive you’d like to donate to.</p>
+            </div>
+            <div class="steps is1">
+                <h1>2</h1>
+                <p>Click the donate button and proceed to filling up a form for the details of your donation. No hassle with donating through online mobile banking partners.</p>
+            </div>
+            <div class="steps is1">
+                <h1>3</h1>
+                <p>Verify your payment method and viola, you’ve made a successful donation with DonaTayo!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    window.onscroll = function() {
+        scrollFunction()
+        scrollFunction1()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 50) {
+            document.getElementById("floating-box").style.width = "90%";
+            document.getElementById("floating-box").style.opacity = "30%";
+            document.getElementById("introd").style.left = "30rem";
+
+
+
+        } else {
+            document.getElementById("floating-box").style.width = "30%";
+            document.getElementById("floating-box").style.opacity = "100%";
+            document.getElementById("introd").style.left = "9rem";
+
+
+        }
+    }
+
+    function scrollFunction1() {
+        if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 300) {
+            document.getElementById("pic-right").style.right = "7rem"
+        } else {
+            document.getElementById("pic-right").style.right = "-20rem"
+        }
+    }
+</script>
+{% endblock %}

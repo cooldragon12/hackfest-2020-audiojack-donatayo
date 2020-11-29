@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'layout.css' %}">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body>
+
+    <div class="nav-name mobile-nav">
+        <div class="logo-img mobileicon" style="background-image: url('{% static  '/Toolbar/Vector.png' %}');"></div>
+        <ul>
+            <li>
+                <a href="{% url 'index' %}">
+                    <p class="nav-item web">HOME</p>
+                    <img class="nav-icon mobile two" src="{% static '/Toolbar/bell.svg'%}" alt="icon">
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'about_us' %}">
+                    <p class="nav-item web">ABOUT US</p>
+                    <img class="nav-icon mobile one" src="{% static '/Toolbar/new.svg'%}" alt="icon">
+                </a>
+            </li>
+            <li class="mob">
+                <a class="icon-mobile" href="{% url 'discover' %}">
+                    <p class="nav-item web">DISCOVER</p>
+                </a>
+            </li>
+            <li>
+                <a class="icon-mobile" href="{% url 'request_drive' %}">
+                    <p class="nav-item web">REQUEST A DRIVE</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    {% block body %} {% endblock %}
+    <script src=""></script>
+</body>
+
+</html>

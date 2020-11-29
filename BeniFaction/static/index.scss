@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+$maincolor: #368BD9;
+$secondary: #F2F9FF;
+$accent1: #39cbe535;
+$accent1solid: #39CCE5;
+$accent2: #304ABF;
+$lightGrayish: #E3EFFA;
+$white: #F5F5F5;
+$darkBlack: #6d6d6d;
+.container-upper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: visible;
+    overflow-x: hidden;
+    #floating-box {
+        display: relative;
+        width: 30%;
+        height: 20rem;
+        position: absolute;
+        border-radius: 2rem;
+        background-color: $accent1;
+        top: 20%;
+        left: 20%;
+        z-index: 1;
+        display: flex;
+        overflow: visible;
+        flex-flow: wrap;
+        transition: .5s;
+        #introd {
+            width: 50rem;
+            font-size: 2.5rem;
+            z-index: 2;
+            background: none;
+            top: 3rem;
+            left: 9rem;
+            position: absolute;
+            transition: .5s;
+        }
+    }
+}
+
+#container-xecond {
+    display: block;
+    .gridguide {
+        display: relative;
+        background-color: $accent1solid;
+        width: 100vw;
+        height: 150vh;
+        clip-path: polygon(0 0, 100% 15%, 100% 80%, 0% 100%);
+        position: absolute;
+        z-index: 0;
+        .content-left {
+            position: absolute;
+            top: 10rem;
+            left: 10rem;
+            width: 25rem;
+            .n91 {
+                font-weight: bold;
+                font-size: 3.4rem;
+                color: $secondary;
+            }
+            .n94 {
+                font-size: 1rem;
+                font-family: 'Open Sans';
+                font-weight: normal;
+                text-justify: auto;
+                color: $secondary;
+            }
+            h3 {
+                margin: 0;
+                color: $maincolor;
+            }
+        }
+        #pic-right {
+            top: 7.6rem;
+            right: -30rem;
+            position: absolute;
+            transition: .8s;
+            img {
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+        .steps-long {
+            display: flex;
+            bottom: 8rem;
+            left: 50vw;
+            transform: translateX(-50%);
+            position: absolute;
+            .steps {
+                color: $secondary;
+                width: 15rem;
+                margin: 2rem;
+                h1 {
+                    text-align: center;
+                    font-size: 4rem;
+                    margin: 0;
+                }
+                p {
+                    text-align: justify;
+                }
+            }
+            .is1::after {
+                content: '';
+                width: 3rem;
+                height: 3rem;
+                background-image: url('/BeniFaction/static/Subtract.svg');
+                position: absolute;
+                top: 4rem;
+                transform: translatex(-3.4rem);
+                background-size: 2.5rem;
+                background-repeat: no-repeat;
+                background-position: center;
+                direction: rtl;
+            }
+        }
+    }
+}
+
+//Discover Tab
+#discover-scroll {
+    display: flex;
+    flex-direction: row;
+    h2 {
+        display: inline-block;
+    }
+    .card {
+        width: 16rem;
+        height: 30rem;
+        background-color: $lightGrayish;
+        margin: 1rem;
+    }
+}

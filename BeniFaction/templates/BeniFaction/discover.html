@@ -1,0 +1,43 @@
+{% extends "BeniFaction/layou-indext.html" %} {% load static %} {% block title %} Discover | Featured {% endblock %} {% block body %}
+<h1>DISCOVER</h1>
+<div class="main-container">
+    <div class="carousel-feat-disc">
+        <h2>TRENDING CAUSES</h2>
+        <div class="featured-back">
+            <h3>COVID19 IN MANILA: LACK OF FUNDS FOR THE PUBLIC</h3>
+        </div>
+    </div>
+    <div id="discover-scroll">
+        <!-- Template for each projects -->
+        <h2>TOP CAUSES FOR PROJECTS</h2><br>
+        <div class="card">
+            <h4>COVID19 IN MANILA</h4>
+            <p>
+                The increase of COVID19 cases in Metro Manila is not getting any lower. People lost jobs and now need help.
+            </p>
+            <a href="{% url 'donateNow' %}">DONATE</a>
+        </div>
+        <div class="card">
+            <h4>DEVASTATING FLOOD IN CAGAYAN VALLEY</h4>
+            <p>
+                Cagayan and Isabela have been through the worst flood in the past 40 years, many casualties were reported.
+            </p>
+            <a href="{% url 'donateNow' %}">DONATE</a></div>
+        <div class="card">
+            <h4>FIRE RAGES IN CATBALOGAN CITY</h4>
+            <p>
+                Reports concluded that around 80 families were affected by a huge fire in Catbalogan City, Samar.
+            </p>
+            <a href="{% url 'donateNow' %}">DONATE</a></div>
+        <div class="card">
+            <h4>BOHOL STRUCK BY A LANDSLIDE</h4>
+            <p>
+                A landslide hit Bohol right after the typhoon recently. Many houses were affected and casualties were reported.
+            </p>
+            <a href="{% url 'donateNow' %}">DONATE</a></div>
+    </div>
+    <div class="toggle-up">
+        <span>to top</span>
+    </div>
+</div>
+{% endblock %}

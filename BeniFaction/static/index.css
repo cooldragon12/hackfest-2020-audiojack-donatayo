@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+.container-upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: visible;
+  overflow-x: hidden;
+}
+
+.container-upper #floating-box {
+  display: relative;
+  width: 30%;
+  height: 20rem;
+  position: absolute;
+  border-radius: 2rem;
+  background-color: #39cbe535;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: visible;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.container-upper #floating-box #introd {
+  width: 50rem;
+  font-size: 2.5rem;
+  z-index: 2;
+  background: none;
+  top: 3rem;
+  left: 9rem;
+  position: absolute;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#container-xecond {
+  display: block;
+}
+
+#container-xecond .gridguide {
+  display: relative;
+  background-color: #39CCE5;
+  width: 100vw;
+  height: 150vh;
+  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 80%, 0% 100%);
+          clip-path: polygon(0 0, 100% 15%, 100% 80%, 0% 100%);
+  position: absolute;
+  z-index: 0;
+}
+
+#container-xecond .gridguide .content-left {
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  width: 25rem;
+}
+
+#container-xecond .gridguide .content-left .n91 {
+  font-weight: bold;
+  font-size: 3.4rem;
+  color: #F2F9FF;
+}
+
+#container-xecond .gridguide .content-left .n94 {
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: normal;
+  text-justify: auto;
+  color: #F2F9FF;
+}
+
+#container-xecond .gridguide .content-left h3 {
+  margin: 0;
+  color: #368BD9;
+}
+
+#container-xecond .gridguide #pic-right {
+  top: 7.6rem;
+  right: -30rem;
+  position: absolute;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+#container-xecond .gridguide #pic-right img {
+  width: 30rem;
+  height: 30rem;
+}
+
+#container-xecond .gridguide .steps-long {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 8rem;
+  left: 50vw;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+}
+
+#container-xecond .gridguide .steps-long .steps {
+  color: #F2F9FF;
+  width: 15rem;
+  margin: 2rem;
+}
+
+#container-xecond .gridguide .steps-long .steps h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+}
+
+#container-xecond .gridguide .steps-long .steps p {
+  text-align: justify;
+}
+
+#container-xecond .gridguide .steps-long .is1::after {
+  content: '';
+  width: 3rem;
+  height: 3rem;
+  background-image: url("/BeniFaction/static/Subtract.svg");
+  position: absolute;
+  top: 4rem;
+  -webkit-transform: translatex(-3.4rem);
+          transform: translatex(-3.4rem);
+  background-size: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  direction: rtl;
+}
+
+#discover-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#discover-scroll h2 {
+  display: inline-block;
+}
+
+#discover-scroll .card {
+  width: 16rem;
+  height: 30rem;
+  background-color: #E3EFFA;
+  margin: 1rem;
+}
+/*# sourceMappingURL=index.css.map */
